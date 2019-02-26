@@ -1,0 +1,19 @@
+:host {
+    display: inline-block;
+}
+
+.container {
+    padding: 12px 24px;
+}
+
+.warn-container {
+    background-color: rgba(255, 95, 77, 0.25); // #fbe9e7
+}
+
+.info-container {
+    background-color: rgba(0, 150, 136, 0.25);
+}
+
+.mat-ripple-element {
+    opacity: 0.6;
+}
