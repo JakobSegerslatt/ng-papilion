@@ -1,0 +1,40 @@
+/* ====================================================================
+    Form styles for inputs, form-groups etc
+   ==================================================================== */
+
+.form-group,
+.flex-form {
+    display: flex;
+    flex-flow: row wrap;
+    >* {
+        margin-right: 15px;
+    }
+}
+
+.mini-input {
+    width: 40px;
+}
+
+.xsmall-input {
+    width: 50px;
+}
+
+.small-input {
+    width: 120px;
+}
+
+.medium-input {
+    width: 200px;
+}
+
+.large-input {
+    width: 340px;
+}
+
+.xlarge-input {
+    width: 420px;
+}
+
+.fullWidth-input {
+    width: 100%;
+}

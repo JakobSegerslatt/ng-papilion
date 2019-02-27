@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MessageContainerComponent } from './components/message-container/message-container.component';
 
@@ -10,8 +11,11 @@ import { MessageContainerComponent } from './components/message-container/messag
     ],
     imports: [
         BrowserModule,
+        FlexLayoutModule,
     ],
     providers: [],
-    bootstrap: [MessageContainerComponent]
+    exports: [
+        MessageContainerComponent
+    ]
 })
 export class NgPapilionModule { }

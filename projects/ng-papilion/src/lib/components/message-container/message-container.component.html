@@ -1,7 +1,5 @@
-<div [class]="'container ' + containerClass" fxLayout fxLayoutGap="15px" fxLayoutAlign=" center">
-  <div *ngIf="icon?.length > 1">
-    <!-- <mat-icon class="medium-icon" [color]="iconColor">{{ icon }}</mat-icon> -->
-  </div>
+<div [class]="containerClass" fxLayout fxLayoutGap="15px" fxLayoutAlign=" center">
+  <ng-content select="[icon]"></ng-content>
   <span fxFlex>
     <ng-content></ng-content>
   </span>

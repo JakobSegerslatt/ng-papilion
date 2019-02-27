@@ -1,0 +1,24 @@
+/* ====================================================================
+    Animations classes which can be toggled on an elemnt to trigger it
+   ==================================================================== */
+
+.smooth-show {
+    opacity: 1;
+    -webkit-transition: 500ms ease-in;
+    -moz-transition: 500ms ease-in;
+    transition: 500ms ease-in;
+}
+
+.smooth-hide {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+.smooth-enlarge {
+    font-size: 3em !important;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}

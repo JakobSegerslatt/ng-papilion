@@ -1,10 +1,10 @@
 {
   "name": "ng-papilion",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": "Jakob Segerslätt",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/JakobSegerslatt/ng-papilion"
+    "type": "git",
+    "url": "https://github.com/JakobSegerslatt/ng-papilion"
   },
   "homepage": "https://github.com/JakobSegerslatt/ng-papilion",
   "keywords": [
@@ -12,7 +12,7 @@
     "Library"
   ],
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0"
   }
 }

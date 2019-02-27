@@ -1,0 +1,80 @@
+/* ====================================================================
+    Typography styles as well as icons
+   ==================================================================== */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.hint {
+    font-size: 80%;
+    line-height: normal;
+}
+
+.small-text {
+    font-size: 80%;
+}
+
+.error {
+    font-weight: 600;
+    font-size: 85%;
+    font-style: italic;
+    color: $error-color;
+}
+
+a,
+.link {
+    color: $link-color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.dark-text {
+    color: black !important;
+}
+
+/* 3.5 ICONS
+==========================================================================
+Material Icons should be displayed as 18, 24, 36 or 48px.
+Add the class .mat-18, .mat-24, .mat-36, .mat48 for this. (Default is .mat-24)
+Ex: <mat-icon class="mat-36">face</mat-icon>
+
+Other help-classes for mat-icons;
+.mat-light: Add on dark backgrounds (no need if the dark theme is applied).
+.mat-inactive: Disabled icon.
+*/
+
+.mini-icon {
+    font-size: 14px !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.small-icon {
+    font-size: 18px !important;
+    width: 18px !important;
+    height: 18px !important;
+    max-height: 18px !important; // Why is this maxheight needed?
+}
+
+.medium-icon {
+    font-size: 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.large-icon {
+    font-size: 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.x-large-icon {
+    font-size: 72px !important;
+    width: 72px !important;
+    height: 72px !important;
+}
