@@ -6,17 +6,18 @@
     padding: 18px 20px;
     line-height: 20px;
     font-size: 14px;
-    font-weight: 600;
 }
 
 .info-container {
     @extend %container-styles;
     background-color: rgba(0, 150, 136, 0.25);
+    font-weight: 500;
 }
 
 .warn-container {
     @extend %container-styles;
     background-color: rgba(255, 95, 77, 0.25); // #fbe9e7
+    font-weight: 500;
     color: #d50000;
 }
 
