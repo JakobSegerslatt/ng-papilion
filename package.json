@@ -15,7 +15,7 @@
     "publish": "npm publish ./dist/ng-papilion/ng-papilion-0.0.8.tgz",
     "copy_files": "copy .\\README.md .\\dist\\ng-papilion",
     "postversion": "npm run docs && git push && git push --tags",
-    "docs": "typedoc --out docs .\\projects\\ng-papilion\\src && type nul >docs/.nojekyll",
+    "docs": "compodoc .\\projects\\ng-papilion\\src -p .\\projects\\ng-papilion\\tsconfig.lib.json -d docs && type nul >docs/.nojekyll",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -49,6 +49,7 @@
     "@angular/cli": "~7.3.3",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
+    "@compodoc/compodoc": "^1.1.9",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
