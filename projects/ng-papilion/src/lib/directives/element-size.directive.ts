@@ -1,4 +1,4 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, OnChanges, AfterViewChecked } from '@angular/core';
 
 /**
  * Can be added on an element to check its

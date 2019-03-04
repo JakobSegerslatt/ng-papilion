@@ -13,7 +13,7 @@ import { ResizedEvent } from './resized-event';
 })
 export class ResizedDirective implements OnInit, OnDestroy {
   /**  */
-  @Output() m6Resized = new EventEmitter<ResizedEvent>();
+  @Output() papResized = new EventEmitter<ResizedEvent>();
 
   private oldWidth: number;
   private oldHeight: number;
@@ -50,7 +50,7 @@ export class ResizedDirective implements OnInit, OnDestroy {
     this.oldWidth = this.element.nativeElement.clientWidth;
     this.oldHeight = this.element.nativeElement.clientHeight;
 
-    this.m6Resized.next(event);
+    this.papResized.next(event);
   }
 
   private sizeHasChanged(): boolean {

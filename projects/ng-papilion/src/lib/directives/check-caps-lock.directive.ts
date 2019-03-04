@@ -10,12 +10,12 @@ import {
  * This can also be used with 2-way binding.
  *
  * @example
- * <input (papCheckCapsLockChange)="capsLock = $event" />
- * <div *ngIf="capsLock">You have capslock activated!</div
+ * <input papCheckCapsLock (papCheckCapsLockChange)="capsLock = $event" />
+ * <div *ngIf="capsLock">You have capslock activated!</div>
  *
  * @example
  * <input [(papCheckCapsLock)]="capsLock" />
- * <div *ngIf="capsLock">You have capslock activated!</div
+ * <div *ngIf="capsLock">You have capslock activated!</div>
  */
 @Directive({
   selector: '[papCheckCapsLock]'

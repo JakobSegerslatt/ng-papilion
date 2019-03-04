@@ -1,0 +1,48 @@
+.demo-cards {
+    .mat-card {
+        margin-bottom: 25px;
+        .mat-card-title {
+            pre {
+                margin: 15px 0;
+            }
+        }
+    }
+    .element-size {
+        margin: 10px 0;
+        background-color: bisque;
+        padding: 10px;
+        resize: both;
+        overflow: auto;
+    }
+    .color-box {
+        min-width: 45px;
+        height: 45px;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.light-text {
+    color: white;
+}
+
+.dark-text {
+    color: black;
+}
+
+.code {
+    display: inline-block;
+    background-color: #fff3e0;
+    padding: 7px;
+    font-weight: 600;
+}
+
+.capitalize-box {
+    background-color: #fff3e0;
+    font-weight: 500;
+    padding: 10px;
+}

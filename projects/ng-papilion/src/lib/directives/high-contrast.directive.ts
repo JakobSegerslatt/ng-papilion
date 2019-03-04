@@ -18,7 +18,7 @@ import { Directive, Input, ElementRef, OnChanges, Renderer2 } from '@angular/cor
 })
 export class HighContrastDirective implements OnChanges {
   /** Expects a css color value, e.g. 'red', '#55c9a3' or 'rgb(131,167,28)' */
-  @Input() m6HighContrast: string;
+  @Input() papHighContrast: string;
 
   constructor(private el: ElementRef) { }
 
@@ -32,7 +32,7 @@ export class HighContrastDirective implements OnChanges {
    * on the input color or computed backgroundcolor
    */
   private applyContrastClass() {
-    const backgroundColor = this.m6HighContrast || window.getComputedStyle(this.el.nativeElement).backgroundColor;
+    const backgroundColor = this.papHighContrast || window.getComputedStyle(this.el.nativeElement).backgroundColor;
 
     if (backgroundColor.length > 0) {
       // Format color

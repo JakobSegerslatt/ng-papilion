@@ -1,8 +1,12 @@
 <div class="mat-typography">
 
     <h1>Demos for the NgPapilion library</h1>
-    <div class="demo-cards" fxLayout fxLayoutGap="25px">
+    <div>Sourcecode can be found at: https://github.com/JakobSegerslatt/ng-papilion</div>
+    <div class="demo-cards">
         <mat-card>
+            <mat-card-title>
+                <pre>MessageContainer</pre>
+            </mat-card-title>
             <pap-message-container>
                 <mat-icon icon>info</mat-icon>
                 This is a simple message to grab the users attention.
@@ -12,5 +16,105 @@
                 This is a warning message to alert the user.
             </pap-message-container>
         </mat-card>
+        <mat-card>
+            <mat-card-title>
+                <pre>CheckCapsLockDirective</pre>
+            </mat-card-title>
+            <div>Type something to check CapsLock</div>
+            <div fxLayout fxLayoutGap="25px">
+                <div>
+                    <mat-form-field>
+                        <mat-label>Only eventbinding</mat-label>
+                        <input matInput type="text" papCheckCapsLock (papCheckCapsLockChange)="capsLock1 = $event">
+                    </mat-form-field>
+                    <div *ngIf="capsLock1" class="error">You have capslock activated!</div>
+                </div>
+
+                <div>
+                    <mat-form-field>
+                        <mat-label>2-way bindning</mat-label>
+                        <input matInput type="text" [(papCheckCapsLock)]="capsLock2" />
+                    </mat-form-field>
+                    <div *ngIf="capsLock2" class="error">You have capslock activated!</div>
+                </div>
+            </div>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-title>
+                <pre>ElementSizeDirective</pre>
+            </mat-card-title>
+
+            <div papElementSize class="element-size">
+                papElementSize, resize the window to test.
+            </div>
+
+            <div>
+                <pre>Element width: {{  myElement.width }}</pre>
+                <pre>Element height: {{ myElement.height }}</pre>
+            </div>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-title>
+                <pre>ResizedDirective</pre>
+            </mat-card-title>
+
+            <div (papResized)="resizedEvent = $event" class="element-size">
+                papResized, resize the window to test.
+            </div>
+
+            <pre class="json">
+                    {{ resizedEvent | json }}
+                </pre>
+
+        </mat-card>
+
+        <mat-card>
+            <mat-card-title>
+                <pre>HighContrastDirective</pre>
+            </mat-card-title>
+
+            <div class="push-down nudge-up">Bound color
+                <pre class="code">[papHighContrast]="color"</pre>
+            </div>
+            <div fxLayout="row wrap">
+                <div *ngFor="let color of contrastColors" class="color-box" [ngStyle]="{'background': color}"
+                    [papHighContrast]="color">
+                    <span>{{color}}</span>
+                </div>
+            </div>
+
+            <div class="push-down nudge-up">Automatic, color is grabbed by background
+                <pre class="code">papHighContrast</pre>
+            </div>
+            <div fxLayout="row wrap">
+                <div *ngFor="let color of contrastColors" class="color-box" [ngStyle]="{'background': color}"
+                    papHighContrast>
+                    <span>{{color}}</span>
+                </div>
+            </div>
+
+        </mat-card>
+
+        <mat-card>
+            <mat-card-title>
+                <pre>CapitalizePipe</pre>
+            </mat-card-title>
+
+            <div fxLayout="row wrap" fxLayoutGap="15px">
+                <div *ngFor="let c of capitalizeStrings" class="capitalize-box">
+                    {{ c }}: {{ c | capitalize}}
+                </div>
+            </div>
+        </mat-card>
+
+        <!-- <mat-card>
+            <mat-card-title>
+                <pre>SafePipe</pre>
+            </mat-card-title>
+
+
+        </mat-card> -->
     </div>
 </div>
