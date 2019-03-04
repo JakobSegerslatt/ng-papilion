@@ -15,7 +15,8 @@ import { Component, OnInit, Input, ViewChild, OnDestroy, SimpleChange, OnChanges
   templateUrl: './message-container.component.html',
   styleUrls: ['./message-container.component.scss']
 })
-export class MessageContainerComponent implements OnInit, OnChanges, OnDestroy {
+export class MessageContainerComponent implements OnInit, OnChanges {
+  /** Determines the color scheme of the component */
   @Input() type: 'info' | 'warn' = 'info';
 
   /** Optional to set but strongly recommended */
@@ -28,7 +29,6 @@ export class MessageContainerComponent implements OnInit, OnChanges, OnDestroy {
 
   constructor() { }
 
-
   ngOnChanges(changes: { [key: string]: SimpleChange }) {
     const typeChange = changes.objType;
     if (typeChange && !typeChange.firstChange) {
@@ -40,10 +40,7 @@ export class MessageContainerComponent implements OnInit, OnChanges, OnDestroy {
     this.calcVariables();
   }
 
-  ngOnDestroy() {
-  }
-
-  calcVariables() {
+  calcVariables(): void {
     if (this.isInfo) {
       this.icon = this.icon || 'info';
       this.iconColor = 'primary';

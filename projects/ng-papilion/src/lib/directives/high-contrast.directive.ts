@@ -31,7 +31,7 @@ export class HighContrastDirective implements OnChanges {
    * Adds the corresponding class to an element based
    * on the input color or computed backgroundcolor
    */
-  private applyContrastClass() {
+  private applyContrastClass(): void {
     const backgroundColor = this.papHighContrast || window.getComputedStyle(this.el.nativeElement).backgroundColor;
 
     if (backgroundColor.length > 0) {
