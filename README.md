@@ -11,4 +11,4 @@ For full list of classes and methods, see the documentation.
 https://ng-papilion-demo.firebaseapp.com/
 
 # Documentation
-https://jakobsegerslatt.github.io/ng-   papilion/
+https://jakobsegerslatt.github.io/ng-papilion/
