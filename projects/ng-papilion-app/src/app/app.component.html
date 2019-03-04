@@ -1,7 +1,9 @@
 <div class="mat-typography">
 
     <h1>Demos for the NgPapilion library</h1>
-    <div>Sourcecode can be found at: https://github.com/JakobSegerslatt/ng-papilion</div>
+    <div>Sourcecode can be found at: <a href="https://github.com/JakobSegerslatt/ng-papilion">
+            https://github.com/JakobSegerslatt/ng-papilion</a>
+    </div>
     <div class="demo-cards">
         <mat-card>
             <mat-card-title>
@@ -46,7 +48,7 @@
             </mat-card-title>
 
             <div papElementSize class="element-size">
-                papElementSize, resize the window to test.
+                papElementSize, resize the window or the element to test.
             </div>
 
             <div>
@@ -61,7 +63,7 @@
             </mat-card-title>
 
             <div (papResized)="resizedEvent = $event" class="element-size">
-                papResized, resize the window to test.
+                papResized, resize the window or the element to test.
             </div>
 
             <pre class="json">

@@ -5,9 +5,10 @@
 # Installation
 **`npm i ng-papilion`**
 
-For full list of classes, see the demo.
+For full list of classes and methods, see the documentation.
 
 # Demo page
 https://ng-papilion-demo.firebaseapp.com/
 
-
+# Documentation
+https://jakobsegerslatt.github.io/ng-   papilion/

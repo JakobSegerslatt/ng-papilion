@@ -1,6 +1,6 @@
 {
   "name": "ng-papilion",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,8 +12,10 @@
     "bundle_scss": "ts-node ./scripts/css-bundle.ts",
     "npm_pack": "cd dist/ng-papilion && npm version patch && npm pack",
     "package": "npm run build_lib && npm run copy_files && npm run npm_pack",
-    "publish": "npm publish ./dist/ng-papilion/ng-papilion-0.0.5.tgz",
+    "publish": "npm publish ./dist/ng-papilion/ng-papilion-0.0.8.tgz",
     "copy_files": "copy .\\README.md .\\dist\\ng-papilion",
+    "postversion": "npm run docs && git push && git push --tags",
+    "docs": "typedoc --out docs .\\projects\\ng-papilion\\src && type nul >docs/.nojekyll",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -65,6 +67,7 @@
     "ts-node": "^7.0.1",
     "tsickle": ">=0.34.0",
     "tslint": "~5.11.0",
+    "typedoc": "^0.14.2",
     "typescript": "~3.2.2"
   }
 }

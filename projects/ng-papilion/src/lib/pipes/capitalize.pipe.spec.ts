@@ -1,4 +1,4 @@
-import { CapitalizePipe } from 'libs/m6-common/pipes/capitalize.pipe';
+import { CapitalizePipe } from './capitalize.pipe';
 
 describe('CapitalizePipe', () => {
   it('create an instance', () => {
